@@ -1,0 +1,110 @@
+:root{
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Neutral-Grayish-Blue: hsl(217, 19%, 38%); 
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+/* - Font size (quote): 28px */
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width:100%;
+  background-color: var(--Dark-Blue);
+}
+.box{
+  padding:40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: var(--Dark-Grayish-Blue);
+  text-align: center;
+  position: relative;
+  max-width: 800px;
+  margin: 0 30px;
+}
+.box p{
+  color:var(--Neon-Green);
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.box q{
+  font-size: 28px;
+  color:var(--Light-Cyan);
+  display: block;
+  margin-bottom: 30px;
+}
+.img-screen{
+  margin-bottom: 20px;
+}
+.img-screen img{
+  width:100%;
+}
+.img-screen img.img1{
+  display: block;
+}
+.img-screen img.img2{
+  display: none;
+}
+.box .clicker{
+  border-radius: 50%;
+  border: none;
+  width: 60px;
+  height:60px;
+  background-color: var(--Neon-Green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom:-30px ;
+  left:50%;
+  transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+.box .clicker:hover{
+  box-shadow: 0px 0px 30px 0px var(--Neon-Green);
+}
+@media (max-width:600px) {
+  .box{
+    padding:30px;
+    margin: 0 10px;
+  }
+  .box q{
+    font-size: 18px;
+  }
+  .img-screen img.img1 {
+    display: none;
+  }
+  .img-screen img.img2 {
+    display: block;
+  }
+}
+/* @media (max-width:400px) {
+  .img-screen img.img2 {
+    width: 240px;
+  }
+} */
